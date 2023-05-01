@@ -14,4 +14,9 @@ class Command(BaseCommand):
 
         for phone in phones:
             # TODO: Добавьте сохранение модели
-            pass
+            Phone.objects.create(id=phone['id'],
+                                 name=phone['name'],
+                                 image=phone['image'],
+                                 price=int(phone['price']),
+                                 release_date=phone['release_date'],
+                                 lte_exists=True if phone['lte_exists'] == 'True' else False)

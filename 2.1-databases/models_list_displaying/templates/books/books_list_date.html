@@ -16,5 +16,16 @@
             </div>
             {% endfor %}
         </div>
+
+        <div class="row">
+            <div class="book col-md-4">
+                <h4>
+                {% for date in next_lost_date %}
+                <a href="http://127.0.0.1:8000/books/{{date}}/">{{date}}</a>
+                {% endfor %}
+                </h4>
+            </div>
+        </div>
     </div>
+
 {% endblock %}

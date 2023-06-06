@@ -3,9 +3,9 @@ from rest_framework.viewsets import ModelViewSet
 from django_filters.rest_framework import DjangoFilterBackend
 
 from .models import Advertisement
-from .serializers import *
-from .permissions import *
-from .filters import *
+from .serializers import AdvertisementSerializer
+from .permissions import IsCreator
+from .filters import AdvertisementFilter
 
 class AdvertisementViewSet(ModelViewSet):
     """ViewSet для объявлений."""

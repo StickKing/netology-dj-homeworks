@@ -21,7 +21,7 @@ Authorization: Token 029cf38720120854520a85dbf565d99897e3d85c
 ###
 
 # попытка поменять объявление
-PATCH {{baseUrl}}/advertisements/2/
+PATCH {{baseUrl}}/advertisements/5/
 Content-Type: application/json
 Authorization: Token 029cf38720120854520a85dbf565d99897e3d85c
 
